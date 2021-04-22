@@ -1,0 +1,41 @@
+{
+  "name": "genfilewrapper",
+  "src": "genfilewrapper",
+  "dest": "genfilewrapper",
+  "generateDdl": true,
+  "dataFileFieldDelimiter": "\t",
+  "dataFileLineDelimiter": "\n",
+  "dataFiles": [
+    {
+      "src": "data/country/country.tbl",
+      "dest": "country/country.tbl",
+      "datasetName": "Country"
+    },
+    {
+      "src": "data/outlet/outlet.tbl",
+      "dest": "outlet/outlet.tbl",
+      "datasetName": "Outlet"
+    },
+    {
+      "src": "data/product/product.tbl",
+      "dest": "product/product.tbl",
+      "datasetName": "Product"
+    },
+    {
+      "src": "data/region/region.tbl",
+      "dest": "region/region.tbl",
+      "datasetName": "Region"
+    },
+    {
+      "src": "data/salestransaction/salestransaction.tbl",
+      "dest": "salestransaction/salestransaction.tbl",
+      "datasetName": "salestransaction"
+    }
+  ],
+  "projects": [
+    {
+      "id": "eeeee42c-fac6-4714-400b-a261b71fc722",
+      "file": "project/genfilewrapper.xml"
+    }
+  ]
+}

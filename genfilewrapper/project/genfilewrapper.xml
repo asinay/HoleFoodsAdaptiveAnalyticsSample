@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.atscale.com/xsd/project_2_0" name="Asaf" version="2" xsi:schemaLocation="http://www.atscale.com/xsd/project_2_0 ../../../../../core/src/main/resources/com/atscale/engine/schema/project_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <annotations>
+    <annotation name="migrationVersion">2021.2.0.3269</annotation>
+    <annotation name="version">5</annotation>
+    <annotation name="engineId">2d0723e6-fa2e-4012-474e-b973c399d46e</annotation>
+    <annotation name="versionTag"></annotation>
+    <annotation name="publishDate">Published on Apr 14, 2021 at 7:12am (UTC)</annotation>
+  </annotations>
+  <properties>
+    <caption>MySample</caption>
+    <visible>true</visible>
+    <aggregate-prediction>
+      <speculative-aggregates>false</speculative-aggregates>
+    </aggregate-prediction>
+  </properties>
+  <attributes>
+    <attribute-key id="7bc5c399-db49-4df2-ada3-c6594d44900f">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="2aa27456-6764-4b09-835e-79c80c1e02a4">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="d539a078-9051-4a63-81e2-c062f13301ec">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="17593452-0425-4416-bede-13bdc812d215">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <keyed-attribute id="e425e80a-e695-4a9a-44ed-83d896e18bd3" key-ref="7bc5c399-db49-4df2-ada3-c6594d44900f" name="product_2">
+      <properties>
+        <caption>product</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="8cec0cca-9c97-416d-5ee3-40c6cb15d755" key-ref="2aa27456-6764-4b09-835e-79c80c1e02a4" name="outlet_2">
+      <properties>
+        <caption>outlet</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="cdd114ef-49bf-49d8-743f-40128b0b6377" key-ref="d539a078-9051-4a63-81e2-c062f13301ec" name="country_2">
+      <properties>
+        <caption>country</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="1d948067-0985-4e4f-71af-a99218ddc313" key-ref="17593452-0425-4416-bede-13bdc812d215" name="prod">
+      <properties>
+        <caption>prod</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+      </properties>
+    </keyed-attribute>
+  </attributes>
+  <dimensions>
+    <dimension id="6d722164-eeb4-4110-4b8c-7f8178ba932f" name="product">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Other</dimension-type>
+      </properties>
+      <hierarchy id="8cb8e095-2306-4912-b2ce-5fe7b259affb" name="product_2">
+        <properties>
+          <caption>product</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="e425e80a-e695-4a9a-44ed-83d896e18bd3">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+          </properties>
+        </level>
+      </hierarchy>
+    </dimension>
+    <dimension id="b38188d6-53d7-4246-6a6d-98975c05e8ac" name="outlet">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Other</dimension-type>
+      </properties>
+      <hierarchy id="6fa49731-5d3b-427d-8240-67e93760ef56" name="outlet_2">
+        <properties>
+          <caption>outlet</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="8cec0cca-9c97-416d-5ee3-40c6cb15d755">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+          </properties>
+        </level>
+      </hierarchy>
+    </dimension>
+    <dimension id="bca8d5ff-0f21-4648-4f34-885ba22bb14e" name="country">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Other</dimension-type>
+      </properties>
+      <hierarchy id="a6a0e0bf-dc56-4bd0-9b44-13669fb321db" name="country_2">
+        <properties>
+          <caption>country</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="cdd114ef-49bf-49d8-743f-40128b0b6377">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+          </properties>
+        </level>
+      </hierarchy>
+    </dimension>
+    <dimension id="e00ad073-bcc4-41fa-585d-809fa009b39e" name="prod">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Other</dimension-type>
+      </properties>
+      <hierarchy id="f1af7ba0-ea5a-4552-bc49-5462d88e0c54" name="prod">
+        <properties>
+          <caption>prod</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="1d948067-0985-4e4f-71af-a99218ddc313">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+          </properties>
+        </level>
+      </hierarchy>
+    </dimension>
+  </dimensions>
+  <data-sets>
+    <data-set id="23b3efa5-4260-4038-4acf-67315fe1f9ee" name="Country">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="con1"></connection>
+        <table>
+          <schema>${schema}</schema>
+          <name>country</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>ID</name>
+          <type>Long</type>
+        </column>
+        <column>
+          <name>Name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>region</name>
+          <type>Long</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="d539a078-9051-4a63-81e2-c062f13301ec" unique="false" complete="true">
+          <column>ID</column>
+        </key-ref>
+        <attribute-ref id="cdd114ef-49bf-49d8-743f-40128b0b6377" complete="true">
+          <column>ID</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="e6f26f18-5997-4c82-5586-b98166d50193" name="Outlet">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="con1"></connection>
+        <table>
+          <schema>${schema}</schema>
+          <name>outlet</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>ID</name>
+          <type>Long</type>
+        </column>
+        <column>
+          <name>City</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>country</name>
+          <type>Long</type>
+        </column>
+        <column>
+          <name>Latitude</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>Longitude</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>Population</name>
+          <type>Int</type>
+        </column>
+        <column>
+          <name>Type</name>
+          <type>String</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="2aa27456-6764-4b09-835e-79c80c1e02a4" unique="false" complete="true">
+          <column>Population</column>
+        </key-ref>
+        <attribute-ref id="8cec0cca-9c97-416d-5ee3-40c6cb15d755" complete="true">
+          <column>City</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="d059b560-e8c4-4fd1-4067-326b6c75e5e7" name="Product">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="con1"></connection>
+        <table>
+          <schema>${schema}</schema>
+          <name>product</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>ID</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>Category</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>Name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>Price</name>
+          <type>Decimal(15,2)</type>
+        </column>
+        <column>
+          <name>SKU</name>
+          <type>String</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="7bc5c399-db49-4df2-ada3-c6594d44900f" unique="false" complete="true">
+          <column>SKU</column>
+        </key-ref>
+        <key-ref id="17593452-0425-4416-bede-13bdc812d215" unique="true" complete="true">
+          <column>Category</column>
+        </key-ref>
+        <attribute-ref id="e425e80a-e695-4a9a-44ed-83d896e18bd3" complete="true">
+          <column>SKU</column>
+        </attribute-ref>
+        <attribute-ref id="1d948067-0985-4e4f-71af-a99218ddc313" complete="true">
+          <column>Name</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="376babb0-0ffe-4311-5d85-4154b1d9a894" name="Region">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="con1"></connection>
+        <table>
+          <schema>${schema}</schema>
+          <name>region</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>ID</name>
+          <type>Long</type>
+        </column>
+        <column>
+          <name>Name</name>
+          <type>String</type>
+        </column>
+      </physical>
+      <logical></logical>
+    </data-set>
+    <data-set id="1114c19b-486b-4c14-5ed6-e3a576f0c021" name="salestransaction">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="con1"></connection>
+        <table>
+          <schema>${schema}</schema>
+          <name>salestransaction</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>ID</name>
+          <type>Long</type>
+        </column>
+        <column>
+          <name>AmountOfSale</name>
+          <type>Decimal(15,2)</type>
+        </column>
+        <column>
+          <name>Channel</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>Comment</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>DateOfSale</name>
+          <type>Date</type>
+        </column>
+        <column>
+          <name>Discount</name>
+          <type>Decimal(15,2)</type>
+        </column>
+        <column>
+          <name>Latitude</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>Longitude</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>outlet</name>
+          <type>Long</type>
+        </column>
+        <column>
+          <name>product</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>TargetAmount</name>
+          <type>Decimal(15,2)</type>
+        </column>
+        <column>
+          <name>UnitsSold</name>
+          <type>Int</type>
+        </column>
+        <column>
+          <name>ZipCode</name>
+          <type>String</type>
+        </column>
+      </physical>
+      <logical></logical>
+    </data-set>
+  </data-sets>
+  <cubes>
+    <cube id="4584cf8f-e7ca-442a-7b58-02975512769d" name="HolefoodsCube">
+      <properties>
+        <caption>HolefoodsCube</caption>
+        <visible>false</visible>
+      </properties>
+      <attributes>
+        <attribute-key id="5a597130-3062-4b9c-928d-2ef6590fb6b8">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <attribute-key id="67b2e5c9-7b2a-4885-a37c-9edab4a1a51a">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <attribute-key id="61e657de-9382-4441-b63a-8a8b8846e352">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <attribute-key id="3ac49acf-c188-4402-80d1-0b884282ddcb">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <keyed-attribute id="c70f17fa-389c-42d1-b1c3-f7f260049cf3" key-ref="5a597130-3062-4b9c-928d-2ef6590fb6b8" name="Channel">
+          <properties>
+            <caption>Channel</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+          </properties>
+        </keyed-attribute>
+        <keyed-attribute id="c818dd5d-e861-4820-93b4-8e7dca9b17ce" key-ref="67b2e5c9-7b2a-4885-a37c-9edab4a1a51a" name="Comment">
+          <properties>
+            <caption>Comment</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+          </properties>
+        </keyed-attribute>
+        <keyed-attribute id="905acd31-8758-4118-93fa-72fe2ed1c144" key-ref="61e657de-9382-4441-b63a-8a8b8846e352" name="Product">
+          <properties>
+            <caption>Product</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+          </properties>
+        </keyed-attribute>
+        <keyed-attribute id="c0c9a6e6-9192-4b33-97f0-c990db74e31d" key-ref="3ac49acf-c188-4402-80d1-0b884282ddcb" name="Zip Code">
+          <properties>
+            <caption>Zip Code</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+          </properties>
+        </keyed-attribute>
+        <attribute id="ceb87ee0-ec27-4ca4-be01-69f0314637f4" name="m_AmountOfSale_sum">
+          <properties>
+            <caption>Amount Of Sale</caption>
+            <visible>true</visible>
+            <type>
+              <measure>
+                <default-aggregation>SUM</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+        <attribute id="4bbbea9f-2655-487b-b1a6-3b9dd2e9bca3" name="m_ID_sum">
+          <properties>
+            <caption>ID</caption>
+            <visible>true</visible>
+            <type>
+              <measure>
+                <default-aggregation>SUM</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+        <attribute id="362493e2-2502-4975-82b5-66ae8653d070" name="m_UnitsSold_sum">
+          <properties>
+            <caption>Units Sold</caption>
+            <visible>true</visible>
+            <type>
+              <measure>
+                <default-aggregation>SUM</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+      </attributes>
+      <dimensions>
+        <dimension id="64f4a02d-330e-47cc-9c4a-11ed596decb9" name="Channel">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="0de4aaf8-816a-487c-9045-e62e5bf35f9d" name="Channel">
+            <properties>
+              <caption>Channel</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="c70f17fa-389c-42d1-b1c3-f7f260049cf3">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+        </dimension>
+        <dimension id="c2982c3f-b418-4260-9408-a56b9898bca3" name="Comment">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="96aef657-a093-45da-a935-a8b819e45dd1" name="Comment">
+            <properties>
+              <caption>Comment</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="c818dd5d-e861-4820-93b4-8e7dca9b17ce">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+        </dimension>
+        <dimension id="e53f706d-1b28-431a-852f-0059652c0640" name="Product">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="ee7ceb0d-e897-4fa4-a38a-d9c9d186187c" name="Product">
+            <properties>
+              <caption>Product</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="905acd31-8758-4118-93fa-72fe2ed1c144">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+        </dimension>
+        <dimension id="6a738140-7585-4410-925e-7ad66f55535a" name="Zip Code">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="9c5fea2a-35ae-439f-8f57-5bf4473989fc" name="Zip Code">
+            <properties>
+              <caption>Zip Code</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="c0c9a6e6-9192-4b33-97f0-c990db74e31d">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+        </dimension>
+      </dimensions>
+      <actions>
+        <properties>
+          <include-default-drill-through>true</include-default-drill-through>
+        </properties>
+      </actions>
+      <data-sets>
+        <data-set-ref id="1114c19b-486b-4c14-5ed6-e3a576f0c021">
+          <properties>
+            <allow-aggregates>true</allow-aggregates>
+            <create-hinted-aggregate>false</create-hinted-aggregate>
+          </properties>
+          <logical>
+            <key-ref id="5a597130-3062-4b9c-928d-2ef6590fb6b8" unique="false" complete="true">
+              <column>Channel</column>
+            </key-ref>
+            <key-ref id="67b2e5c9-7b2a-4885-a37c-9edab4a1a51a" unique="false" complete="true">
+              <column>Comment</column>
+            </key-ref>
+            <key-ref id="61e657de-9382-4441-b63a-8a8b8846e352" unique="false" complete="true">
+              <column>product</column>
+            </key-ref>
+            <key-ref id="3ac49acf-c188-4402-80d1-0b884282ddcb" unique="false" complete="true">
+              <column>ZipCode</column>
+            </key-ref>
+            <attribute-ref id="ceb87ee0-ec27-4ca4-be01-69f0314637f4" complete="true">
+              <column>AmountOfSale</column>
+            </attribute-ref>
+            <attribute-ref id="4bbbea9f-2655-487b-b1a6-3b9dd2e9bca3" complete="true">
+              <column>ID</column>
+            </attribute-ref>
+            <attribute-ref id="362493e2-2502-4975-82b5-66ae8653d070" complete="true">
+              <column>UnitsSold</column>
+            </attribute-ref>
+            <attribute-ref id="c70f17fa-389c-42d1-b1c3-f7f260049cf3" complete="true">
+              <column>Channel</column>
+            </attribute-ref>
+            <attribute-ref id="c818dd5d-e861-4820-93b4-8e7dca9b17ce" complete="true">
+              <column>Comment</column>
+            </attribute-ref>
+            <attribute-ref id="905acd31-8758-4118-93fa-72fe2ed1c144" complete="true">
+              <column>product</column>
+            </attribute-ref>
+            <attribute-ref id="c0c9a6e6-9192-4b33-97f0-c990db74e31d" complete="true">
+              <column>ZipCode</column>
+            </attribute-ref>
+          </logical>
+        </data-set-ref>
+      </data-sets>
+      <calculated-members></calculated-members>
+      <aggregates></aggregates>
+    </cube>
+  </cubes>
+</schema>
