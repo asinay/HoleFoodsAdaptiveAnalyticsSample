@@ -7,11 +7,11 @@ The **manifest.json** file controls the data files and project files also and de
 
 The **new_project.xml** might be redundant (?)
 
-The **/genfilewrapper/data** folder holds all the tables that will be imported into IRIS
-  Each folder will hold a file with the data (please note that there are no headers in the \<table name\>.tbl **tab delimited** file
+The **/MySample/data** folder holds all the tables that will be imported into IRIS
+  Each folder will hold a file with the data (please note that there are no headers in the \<table name\>.csv **comma delimited** file
   ![image](https://user-images.githubusercontent.com/30053816/115742298-87786600-a35e-11eb-8b54-ecc2d65f8ee6.png)
 
-The **/genfilewrapper/project** folder will hold the project file that will contain the following:
+The **/MySample/project** folder will hold the project file that will contain the following:
 1. Some meta data about the AtScale version publish date
 2. The AtScale project
 3. THe tables metadata in the \<data-set\> where you can control the names of the tables and columns
