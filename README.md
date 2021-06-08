@@ -1,11 +1,9 @@
 # HoleFoodsAdaptiveAnalyticsSample
-## overview
+## Overview
 Easy way to import the HoleFoods Sample data into IRIS and a sample AtScale model using the AtScale Sample Bundle
 
 ## The files 
 The **manifest.json** file controls the data files and project files also and describes the delimeters
-
-The **new_project.xml** might be redundant (?)
 
 The **/MySample/data** folder holds all the tables that will be imported into IRIS
   Each folder will hold a file with the data (please note that there are no headers in the \<table name\>.csv **comma delimited** file
