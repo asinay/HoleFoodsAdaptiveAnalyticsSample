@@ -38,7 +38,7 @@ The **/MySample/project** folder will hold the project file that will contain th
 ## Creating a new Project zip
 Once you have made your changes you will need to zip up the files. To create the zip file, the top level MySample directory and manifest.json should be zipped together.
 
-![image](https://user-images.githubusercontent.com/30053816/115744442-919b6400-a360-11eb-9377-a47fa2955c0e.png)
+![image](https://user-images.githubusercontent.com/24307254/121373511-20624100-c90d-11eb-964a-bd0aee369283.PNG)
 
 
 
