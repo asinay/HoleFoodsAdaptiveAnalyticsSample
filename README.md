@@ -4,7 +4,7 @@ Easy way to import the HoleFoods Sample data into InterSystems IRIS and a sample
 
 # Installing the Sample
 ## Prep IRIS before loading the sample
-1) Make sure you have the schema defined in the IRIS namespace you want to import it to 
+1) Make sure you have the ***MySample*** schema defined in the IRIS namespace you want to import the sample into 
 2) If the schema is not defined, run the following SQL in the SMP:
 *  _CREATE TABLE MySample.Dummy (P1 INT NOT NULL)_
 3) If you want to also set up some global mappings, insert at least 1 row so you can find out the global hash that needs to be mapped
