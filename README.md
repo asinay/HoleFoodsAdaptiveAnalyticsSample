@@ -1,9 +1,9 @@
 # HoleFoodsAdaptiveAnalyticsSample
 ## Overview
-Easy way to import the HoleFoods Sample data into IRIS and a sample AtScale model using the AtScale Sample Bundle
+Easy way to import the HoleFoods Sample data into InterSystems IRIS and a sample AtScale model using the AtScale Sample Bundle
 
-# Installing The Sample
-## Prep before loading the sample into IRIS
+# Installing the Sample
+## Prep IRIS before loading the sample
 1) Make sure you have the schema defined in the IRIS namespace you want to import it to 
 2) If the schema is not defined, run the following SQL in the SMP:
 *  _CREATE TABLE MySample.Dummy (P1 INT NOT NULL)_
