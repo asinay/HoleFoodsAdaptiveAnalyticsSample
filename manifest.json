@@ -1,41 +1,46 @@
 {
-  "name": "genfilewrapper",
-  "src": "genfilewrapper",
-  "dest": "genfilewrapper",
+  "name": "mysample",
+  "src": "mysample",
+  "dest": "mysample",
   "generateDdl": true,
-  "dataFileFieldDelimiter": "\t",
-  "dataFileLineDelimiter": "\n",
+  "dataFileFieldDelimiter": ",",
+  "dataFileLineDelimiter": "\r\n",
   "dataFiles": [
     {
-      "src": "data/country/country.tbl",
-      "dest": "country/country.tbl",
-      "datasetName": "Country"
+      "src": "MySample/data/dateomniture/dateomniture.csv",
+      "dest": "dateomniture/dateomniture.csv",
+      "datasetName": "dateomniture"
     },
     {
-      "src": "data/outlet/outlet.tbl",
-      "dest": "outlet/outlet.tbl",
+      "src": "MySample/data/country/country.csv",
+      "dest": "country/country.csv",
+      "datasetName": "country"
+    },
+    {
+      "src": "MySample/data/outlet/outlet.csv",
+      "dest": "outlet/outlet.csv",
       "datasetName": "Outlet"
     },
     {
-      "src": "data/product/product.tbl",
-      "dest": "product/product.tbl",
+      "src": "MySample/data/product/product.csv",
+      "dest": "product/product.csv",
       "datasetName": "Product"
     },
     {
-      "src": "data/region/region.tbl",
-      "dest": "region/region.tbl",
+      "src": "MySample/data/region/region.csv",
+      "dest": "region/region.csv",
       "datasetName": "Region"
     },
     {
-      "src": "data/salestransaction/salestransaction.tbl",
-      "dest": "salestransaction/salestransaction.tbl",
-      "datasetName": "salestransaction"
+      "src": "MySample/data/salestransaction/salestransaction.csv",
+      "dest": "salestransaction/salestransaction.csv",
+      "datasetName": "SalesTransaction"
     }
   ],
   "projects": [
     {
-      "id": "eeeee42c-fac6-4714-400b-a261b71fc722",
-      "file": "project/genfilewrapper.xml"
+      "id": "0ec961b7-1d6b-4352-4b83-7db67d8693d1",
+      "file": "MySample/project/MySample.xml"
     }
   ]
 }
